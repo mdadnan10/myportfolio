@@ -48,12 +48,14 @@ function getInputValues(id){
 function saveMessage(name, contactInfo, subject, message, time){
 
     var newMessageRef = messagesRef.doc();
+
     newMessageRef.set({
         name : name,
         contactInfo : contactInfo,
         subject : subject,
         message : message,
-        time : time 
+        time : time,
+        mId : newMessageRef.id
     })
 
 }
