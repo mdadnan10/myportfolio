@@ -25,9 +25,10 @@ function submitForm(e){
     var contactInfo = getInputValues('contactInfo');
     var subject = getInputValues('subject');
     var message = getInputValues('message');
+    var time = (new Date()).getTime();
 
     // save message
-    saveMessage(name, contactInfo, subject, message);
+    saveMessage(name, contactInfo, subject, message, time);
 
     // show success message
     swal({
@@ -44,14 +45,15 @@ function getInputValues(id){
 }
 
 // save message to firebase
-function saveMessage(name, contactInfo, subject, message){
+function saveMessage(name, contactInfo, subject, message, time){
 
     var newMessageRef = messagesRef.doc();
     newMessageRef.set({
         name : name,
         cintactInfo : contactInfo,
         subject : subject,
-        message : message
+        message : message,
+        time : time 
     })
 
 }
