@@ -128,7 +128,7 @@
         <div class="container">
             <div class="row full-screen align-items-center">
                 <div class="home-text">
-                    <p>Hello</p>
+                    <p>Hi,</p>
                     <h2>I'm Adnan</h2>
                     <h1>Android & Web Developer</h1>
                     <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
@@ -169,7 +169,7 @@
                     <!-- socil media links end -->
                 </div>
                 <div class="about-info">
-                    <p><span>Hi, I'm Adnan.</span> A self-driven quick-learner, collaborative individual, passionate
+                    <p><span>Hi, I'm Adnan.</span> A self-driven quick-learner, passionate
                         about new-age technologies.</p>
                     <p>I have an innate liking for technologies and computers from the very beginning which made me take
                         up IT in my Bachelors. I was always fascinated by looking at people working on a computer with
@@ -1249,22 +1249,22 @@
             </div>
             <div class="row">
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="row">
                             <div class="w-50">
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Name" class="input-control">
+                                    <input type="text" placeholder="Name" id="name" class="input-control" required>
                                 </div>
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Email/Contact" class="input-control">
+                                    <input type="text" placeholder="Email/Contact" id="contactInfo" class="input-control" required>
                                 </div>
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Subject" class="input-control">
+                                    <input type="text" placeholder="Subject" id="subject" class="input-control" required>
                                 </div>
                             </div>
                             <div class="w-50">
                                 <div class="input-group outer-shadow hover-in-shadow">
-                                    <textarea class="input-control" placeholder="Message"></textarea>
+                                    <textarea class="input-control" id="message" placeholder="Message" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -1272,6 +1272,7 @@
                             <div class="submit-btn">
                                 <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
                             </div>
+
                         </div>
                     </form>
                 </div>
@@ -1297,7 +1298,7 @@
                 <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i
                         class="fas fa-plus"></i></div>
                 <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
-                <img src="img/large/project-1/4.png" alt="img" class="pp-img outer-shadow">
+                <img src="img/large/project-1/1.webp" alt="img" class="pp-img outer-shadow">
                 <div class="pp-counter"></div>
             </div>
             <div class="pp-loader">
@@ -1328,10 +1329,19 @@
         </div>
     </div>
     <!-- style switcher end -->
+
     <!-- main js -->
     <script src="js/main.js"></script>
     <!-- style switcher -->
     <script src="js/style-switcher.js"></script>
+
+    <!-- databse js -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="js/database.js"></script>
+    
+    <!-- sweet alert js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
