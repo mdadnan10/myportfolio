@@ -50,12 +50,13 @@ function saveMessage(name, contactInfo, subject, message, time){
     var newMessageRef = messagesRef.doc();
 
     newMessageRef.set({
-        name : name,
         contactInfo : contactInfo,
-        subject : subject,
+        mId : newMessageRef.id,
         message : message,
-        time : time,
-        mId : newMessageRef.id
+        name : name,
+        read : "unread",
+        subject : subject,
+        time : time
     })
 
 }
