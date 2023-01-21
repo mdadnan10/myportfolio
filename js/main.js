@@ -70,7 +70,22 @@
                 window.location.hash = hash;
             }
         }
-    })
+    });
+
+    // Role Typer
+    var typeData = new Typed(".role", {
+        strings: [
+            "Software Engineer at Accenture",
+            "Full Stack Developer",
+            "Web Developer",
+            "Android Developer",
+            "Backend Developer",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+    });
 
 })();
 
